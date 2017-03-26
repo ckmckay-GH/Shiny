@@ -1,0 +1,46 @@
+---
+title: 'Shiny Application and Reproducible Pitch'
+author: "Ken Lai"
+date: "March 26, 2017"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+---
+
+>This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+---
+
+>Load the mtcars data for processing later
+```{r}
+library(datasets)
+data(mtcars)
+head(mtcars, 3)
+```
+
+
+
+---
+
+>A simple graph to display in Slidy
+
+```{r}
+library(ggplot2)
+boxplot(mpg~am, data = mtcars,
+        xlab = "Transmission",
+        ylab = "Miles per Gallon",
+        main = "MPG by Transmission Type")
+```
+
+---
+
+##Thanks for visiting my presentation slide using Slidy
+
+>Thanks you
+
